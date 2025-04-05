@@ -1,0 +1,188 @@
+/* For All Pages */
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+    background-color: #4d4861;
+}
+nav {
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  color: snow;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#logo{
+  height: 50px;
+  width:50px;
+  border-radius: 50%;
+  background-image: url('Logo.jpg');
+  background-size: cover;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li{
+  margin:0px 10px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: snow;
+}
+.menu-toggle{
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px){
+  nav ul {
+    visibility: hidden;
+    height:50%;
+    flex-direction: column;
+    position: fixed;
+    top:60px;
+    right: 0px;
+    background: #121212;
+    width: 100%;
+    text-align: center;
+    opacity: 0.5;
+    transform: translateY(-20px);
+    transition: opacity 0.1s , transform 0.1s ease-in , visibility 0.1s ease-in;
+  }
+  nav ul li{
+    margin-top: 50px;
+    
+  }
+  nav ul.active{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .menu-toggle{
+    display:block;
+    cursor:pointer;
+    font-size: 30px;
+    margin-right:  5px;
+    padding: 0px 5px;
+  }
+  nav:has(ul.active) {
+    position:fixed;
+    top: 0px;
+    background-color: #121212;
+  }
+}
+
+
+/* For index.html Page*/
+#bio_image {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 10px;
+}
+
+#bio_image img {
+  width: 250px; 
+  height: 250px;
+  border-radius: 50%;
+}
+h1{
+  color:#f9f9f9 ;
+  margin-top: 10px;
+}
+p{
+  color: #a8a8a8;
+  margin-top: 10px;
+}
+#school_link , #youtube_link {
+  text-decoration: underline;
+  color: #6e90a4;
+}
+/* For Page BBBoys.html */
+#container_bbboys{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+#bbboys_pic{
+  background-image: url('BBBoys_pic.jpg');
+  background-size: cover;
+  background-color:#4d4861;
+  height:270px;
+  width:270px ;
+  border: none;
+  margin-top: 10px;
+}
+#page_bbboys_h1{
+  text-align: Center;
+}
+#page_bbboys_p{
+  text-align: left;
+}
+@media screen and (max-width:768px){
+  #page_bbboys_p{
+    text-align: center;
+  }
+}
+#page_bbboys_a{
+  text-decoration: none;
+  color: snow;
+}
+/* for anime.html page */
+
+#anime_page_div{
+  display: flex;
+  justify-content: Center;
+  align-content: center;
+  margin-top: 10px;
+}
+#anime_pic{
+  height: 300px;
+  width: 300px;
+  background-image: url('anime_logo.jpeg');
+  background-size: cover;
+  border-radius: 50%;
+}
+#anime_page_h1{
+  text-align: center;
+}
+#anime_link_ligo{
+  height: 50px;
+  width:50px;
+  background-image: url('hi-anime_logo.jpeg');
+  background-size: cover;
+}
+#anime_page_div{
+  display: flex;
+  justify-content: space;
+  align-content: center;
+  gap: 10px;
+}
+#anime_page_div_a{
+  align-self: center;
+  color: snow;
+}
+/* for games.html page*/
+#games_page_h1{
+  text-align: center;
+}
+#game_page_fc-logo{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#games_page_div{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-image: url('fc_logo.png');
+  background-size: cover;
+}
+#games_page_h1_a{
+  color: snow;
+  text-decoration: none;
+}
+
